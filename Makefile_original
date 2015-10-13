@@ -1,0 +1,28 @@
+CC = gcc
+CFLAGS = -Wall -g
+LIBS = -lm
+
+LIBDIR = ../libsrc
+SRCDIR = ../src
+
+## Summary Settings
+SUMMARYDIR = Summary
+
+TOPDIR = TOP_Value
+Variance_DIR = TOP_Variance
+TOPDIR_2Pass = TOP_Value_2Pass
+Variance_DIR_2Pass = TOP_Variance_2Pass
+Variance_DIR_exact = TOP_Variance_Exact
+Variance_DIR_2W = TOP_Variance_2W
+Variance_DIR_1W = TOP_Variance_1W
+
+Exact_vs_Direct = Exact_vs_Direct
+Exact_vs_2Pass  = Exact_vs_2Pass
+Direct_vs_2Pass = Direct_vs_2Pass
+
+DIRS = $(SUMMARYDIR) $(TOPDIR) $(TOPDIR_2Pass) $(Variance_DIR) $(Variance_DIR_2Pass) $(Variance_DIR_exact) $(Variance_DIR_2W) $(Variance_DIR_1W)
+Sub_DIRS = $(SUMMARYDIR)/$(Exact_vs_Direct) $(SUMMARYDIR)/$(Exact_vs_2Pass) $(SUMMARYDIR)/$(Direct_vs_2Pass)
+
+all:
+	make init
+	

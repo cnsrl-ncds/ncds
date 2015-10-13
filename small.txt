@@ -1,0 +1,2 @@
+1
+/opt/lab518_data/Trace/MAWI/24_hour_trace/2003_02_27/200302270000.dump

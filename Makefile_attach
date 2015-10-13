@@ -1,0 +1,14 @@
+init:
+	make clean
+	mkdir $(DIRS)
+	mkdir $(Sub_DIRS)
+
+clean:
+	test -d $(SUMMARYDIR) && rm -rf $(SUMMARYDIR) || echo "$(SUMMARYDIR) not exist"
+	test -d $(TOPDIR) && rm -rf $(TOPDIR) || echo "$(TOPDIR) not exist"
+	test -d $(Variance_DIR) && rm -rf $(Variance_DIR) || echo "$(SVariance_DIR) not exist"
+	test -d $(TOPDIR_2Pass) && rm -rf $(TOPDIR_2Pass) || echo "$(TOPDIR_2Pass) not exist"
+	test -d $(Variance_DIR_2Pass) && rm -rf $(Variance_DIR_2Pass) || echo "$(Variance_DIR_2Pass) not exist"
+	test -d $(Variance_DIR_exact) && rm -rf $(Variance_DIR_exact) || echo "$(Variance_DIR_exact) not exist"
+	test -d $(Variance_DIR_2W) && rm -rf $(Variance_DIR_2W) || echo "$(Variance_DIR_2W) not exist"
+	test -d $(Variance_DIR_1W) && rm -rf $(Variance_DIR_1W) || echo "$(Variance_DIR_1W) not exist"
